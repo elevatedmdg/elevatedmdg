@@ -10,6 +10,9 @@
  */
 
 // add custom post type
+
+namespace eMDG\Testimonials;
+
 add_action( 'init', 'create_post_type_testimonials' );
 function create_post_type_testimonials() {
 	register_post_type( 'testimonials',

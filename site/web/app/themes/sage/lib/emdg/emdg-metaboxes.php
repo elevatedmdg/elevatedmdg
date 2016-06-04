@@ -14,6 +14,9 @@ add_action('admin_menu', 'plib_add_box');
 
 
 //add meta boxes to post types
+
+namespace eMDG\MetaBoxAdd;
+
 function plib_add_box() {
     global $meta_box;
 
@@ -23,6 +26,9 @@ function plib_add_box() {
 }
 
 //format meta boxes
+
+namespace eMDG\MetaBoxFormat;
+
 function plib_format_box() {
   global $meta_box, $post;
 
@@ -70,6 +76,9 @@ function plib_format_box() {
 }
 
 //save data from meta box
+
+namespace eMDG\MetaBoxSave;
+
 function plib_save_data($post_id) {
     global $meta_box,  $post;
 

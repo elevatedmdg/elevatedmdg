@@ -49,6 +49,8 @@
 /// create metaboxes
 add_action( 'admin_init', 'add_post_format_metabox' );
 
+namespace eMDG\PFMetaBoxAdd;
+
 function add_post_format_metabox() {
     global $metaboxes;
 
@@ -61,6 +63,9 @@ function add_post_format_metabox() {
 
 
 /// show metaboxes
+
+namespace eMDG\PFMetaBoxShow;
+
 function show_metaboxes( $post, $args ) {
     global $metaboxes;
 
@@ -89,6 +94,8 @@ function show_metaboxes( $post, $args ) {
 
 /// save metaboxes
 add_action( 'save_post', 'save_metaboxes' );
+
+namespace eMDG\PFMetaBoxSave;
 
 function save_metaboxes( $post_id ) {
     global $metaboxes;
@@ -135,6 +142,9 @@ function save_metaboxes( $post_id ) {
 
 /// load jquery
 add_action( 'admin_print_scripts', 'display_metaboxes', 1000 );
+
+namespace eMDG\PFMetaBoxDisplay;
+
 /// control metabox display
 function display_metaboxes() {
     global $metaboxes;
