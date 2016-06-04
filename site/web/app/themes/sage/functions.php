@@ -323,3 +323,5 @@ function display_metaboxes() {
         <?php
     endif;
 }
+
+?>
