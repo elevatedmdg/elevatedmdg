@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  elevatedmdg.com:
+  elevatedmdg.dev:
     site_hosts:
-      - 159.203.216.246
+      - elevatedmdg.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: admin@elevatedmdg.com
     multisite:
