@@ -5,7 +5,7 @@
 wordpress_sites:
   elevatedmdg.com:
     site_hosts:
-      - elevatedmdg.dev
+      - 159.203.216.246
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: admin@elevatedmdg.com
     multisite:
